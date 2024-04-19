@@ -34,7 +34,8 @@ public class FirstController {
 	@GetMapping ("/product/test/all") 
 	public String getProductTestAll(Model model) {
 		ArrayList<Product> allProducts= new ArrayList<>(Arrays.asList(new Product("Abols",0.99f,"Garsigs",4)));
-		model.addAttribute(allProducts)d
+		model.addAttribute(allProducts);
+		return "product-show-all-page";
 	}
 	
 
